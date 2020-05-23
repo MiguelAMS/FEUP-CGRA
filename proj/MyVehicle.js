@@ -14,7 +14,6 @@ class MyVehicle extends CGFobject {
         this.finAng = 0;
 
         this.autoPilot = false;
-        this.autoPilotAng = 0;
         this.time = 0;
         this.xCenter = 0;
         this.zCenter = 0;this.radius = 5;
@@ -137,7 +136,6 @@ class MyVehicle extends CGFobject {
             this.time = 0;
             var radius = 5;
             this.autoPilot = true;
-            this.autoPilotAng = 0;
             this.xCenter = this.x + this.radius * Math.sin((this.angY+90) * Math.PI/180);
             this.zCenter = this.z + this.radius * Math.cos((this.angY+90) * Math.PI/180);
         }
@@ -180,7 +178,6 @@ class MyVehicle extends CGFobject {
         this.time = 0;
         this.xCenter = 0;
         this.zCenter = 0;
-        this.autoPilotAng = 0;
     }
     
     display() {
