@@ -26,7 +26,7 @@ class MyInterface extends CGFinterface
 		this.gui = new dat.GUI();
 
 		this.gui.add(this.scene, 'selectedObject', this.scene.objectList).onChange(this.scene.onSelectedObjectChanged.bind(this.scene)).name('Object Type');
-		this.gui.add(this.scene, 'wireframe').onChange(this.scene.onWireframeChanged.bind(this.scene)).name("Wire Frame");
+		this.gui.add(this.scene, 'wireframe').onChange(this.scene.onWireframeChanged.bind(this.scene));
 
 		this.gui.add(this.scene, 'selectedExampleShader', this.scene.shadersList).name('Shader examples').onChange(this.scene.onSelectedShaderChanged.bind(this.scene));
 		this.gui.add(this.scene, 'showShaderCode').name('Show Shader Code').onChange(this.scene.onShaderCodeVizChanged.bind(this.scene));

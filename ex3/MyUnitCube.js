@@ -35,7 +35,7 @@ class MyUnitCube extends CGFobject {
             0.5, 0.5, 0.5,        //20 (4)
             0.5, -0.5, 0.5,       //21 (5)
             0.5, -0.5, -0.5,      //22 (6)
-            0.5, 0.5, -0.5        //23 (7)*/
+            0.5, 0.5, -0.5        //23 (7)
 		];
 
 		//Counter-clockwise reference of vertices
