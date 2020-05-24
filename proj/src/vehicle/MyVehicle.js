@@ -12,11 +12,11 @@ class MyVehicle extends CGFobject {
         this.x = 0;
         this.z = 0;
         this.finAng = 0;
-
         this.autoPilot = false;
         this.time = 0;
         this.xCenter = 0;
-        this.zCenter = 0;this.radius = 5;
+        this.zCenter = 0;
+		this.radius = 5;
 
         this.sphere = new MySphere(this.scene, this.slices, this.stacks);
         this.cylinder= new MyCylinder(this.scene, this.slices);
@@ -134,7 +134,6 @@ class MyVehicle extends CGFobject {
             this.autoPilot = false;
         } else {
             this.time = 0;
-            var radius = 5;
             this.autoPilot = true;
             this.xCenter = this.x + this.radius * Math.sin((this.angY+90) * Math.PI/180);
             this.zCenter = this.z + this.radius * Math.cos((this.angY+90) * Math.PI/180);
